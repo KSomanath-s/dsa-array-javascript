@@ -325,12 +325,12 @@ console.log(newStringsContainLetterA); // [ 'apple', 'banana', 'mango' ]
 // Output: 3
 
 
-const arrOne=[1,2,3,4,5,6,7,8,9,10];
+const arrOne = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function countEven(){
-    let count=0;
-    for(let i=0;i<arrOne.length;i++){
-        if(arrOne[i]%2===0){
+function countEven() {
+    let count = 0;
+    for (let i = 0; i < arrOne.length; i++) {
+        if (arrOne[i] % 2 === 0) {
             count++;
         }
     }
@@ -341,23 +341,23 @@ console.log(countEven());
 
 
 // Max Number
-const arrNew=[10, 3, 45,2,55,100];
-let max=arr[0];
+const arrNew = [10, 3, 45, 2, 55, 100];
+let max = arr[0];
 
-for(let i=0;i<arrNew.length;i++){
-    if(max<arrNew[i]){
-        max=arrNew[i]
+for (let i = 0; i < arrNew.length; i++) {
+    if (max < arrNew[i]) {
+        max = arrNew[i]
     }
 }
 console.log(max);
-const arrThree=[10, 3, 45,2,55,100,499];
+const arrThree = [10, 3, 45, 2, 55, 100, 499];
 
 
-function maxNumber(){
-    let max=arrThree[0];
-    for(let i=0;i<arrThree.length;i++){
-        if(max<arrThree[i]){
-            max=arrThree[i]
+function maxNumber() {
+    let max = arrThree[0];
+    for (let i = 0; i < arrThree.length; i++) {
+        if (max < arrThree[i]) {
+            max = arrThree[i]
         }
     }
     return max;
@@ -368,16 +368,16 @@ console.log(maxNumber());
 const arrFive = [10, 3, 45, 2, 55, 100, 499];
 
 
-function findSecondLargest(){
-    let first=-Infinity;
-    let second=-Infinity;
-    
-    for(let i=0;i<arrFive.length;i++){
-        if(arrFive[i]>first){
-            second=first;
-            first=arrFive[i]
-        }else if(arrFive[i]>second && arrFive[i]!==first){
-            second=arrFive[i]
+function findSecondLargest() {
+    let first = -Infinity;
+    let second = -Infinity;
+
+    for (let i = 0; i < arrFive.length; i++) {
+        if (arrFive[i] > first) {
+            second = first;
+            first = arrFive[i]
+        } else if (arrFive[i] > second && arrFive[i] !== first) {
+            second = arrFive[i]
         }
     }
     return second;
